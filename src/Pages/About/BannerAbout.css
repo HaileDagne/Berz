@@ -1,0 +1,64 @@
+/* About Banner Specific Styles */
+.banner-about {
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    linear-gradient(
+      45deg,
+      #065f46 0%,
+      #10b981 25%,
+      #065f46 50%,
+      #10b981 75%,
+      #065f46 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="about-pattern" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="20" fill="none" stroke="%23d47d03" stroke-width="2" opacity="0.1"/><path d="M30,30 Q50,20 70,30 Q50,40 30,30" fill="%23d47d03" opacity="0.08"/><circle cx="50" cy="50" r="5" fill="%23ff9500" opacity="0.15"/><path d="M40,40 L60,40 L60,60 L40,60 Z" fill="none" stroke="%23ff9500" stroke-width="1" opacity="0.1"/><circle cx="35" cy="35" r="2" fill="%23d47d03" opacity="0.12"/><circle cx="65" cy="65" r="2" fill="%23d47d03" opacity="0.12"/></pattern></defs><rect width="1200" height="600" fill="%23065f46"/><rect width="1200" height="600" fill="url(%23about-pattern)"/></svg>');
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+  background-attachment: fixed, fixed, fixed;
+}
+
+.banner-about .banner-content {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(240, 253, 250, 0.95) 100%
+  );
+  border: 2px solid rgba(16, 185, 129, 0.3);
+  box-shadow: 0 30px 80px rgba(6, 95, 70, 0.3), 0 15px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.banner-about .banner-title {
+  background: linear-gradient(135deg, #065f46 0%, #10b981 50%, #065f46 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 20px rgba(6, 95, 70, 0.3);
+}
+
+.banner-about .banner-title::after {
+  background: linear-gradient(90deg, #065f46, #10b981, #065f46);
+  box-shadow: 0 2px 10px rgba(6, 95, 70, 0.4);
+}
+
+.banner-about .cta-button.primary {
+  background: linear-gradient(135deg, #065f46 0%, #10b981 50%, #065f46 100%);
+  box-shadow: 0 12px 30px rgba(6, 95, 70, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner-about .cta-button.primary:hover {
+  background: linear-gradient(135deg, #047857 0%, #059669 50%, #047857 100%);
+  box-shadow: 0 20px 40px rgba(6, 95, 70, 0.5), 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner-about .cta-button.secondary {
+  border: 2px solid rgba(6, 95, 70, 0.3);
+  color: #065f46;
+}
+
+.banner-about .cta-button.secondary:hover {
+  background: linear-gradient(135deg, #065f46 0%, #10b981 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,441 @@
+/* Banner Component Styles */
+.banner {
+  position: relative;
+  height: 70vh;
+  min-height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Banner */
+.banner-home {
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    linear-gradient(
+      45deg,
+      #1a1a1a 0%,
+      #2c2c2c 25%,
+      #1a1a1a 50%,
+      #2c2c2c 75%,
+      #1a1a1a 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="restaurant-pattern" width="150" height="150" patternUnits="userSpaceOnUse"><circle cx="75" cy="75" r="20" fill="none" stroke="%23d47d03" stroke-width="1" opacity="0.1"/><path d="M50,50 L100,50 L100,100 L50,100 Z" fill="none" stroke="%23ff9500" stroke-width="1" opacity="0.08"/><circle cx="75" cy="75" r="8" fill="%23d47d03" opacity="0.05"/><path d="M60,60 L90,60 L90,90 L60,90 Z" fill="none" stroke="%23d47d03" stroke-width="0.5" opacity="0.06"/><circle cx="40" cy="40" r="3" fill="%23ff9500" opacity="0.1"/><circle cx="110" cy="110" r="3" fill="%23ff9500" opacity="0.1"/></pattern></defs><rect width="1200" height="600" fill="%231a1a1a"/><rect width="1200" height="600" fill="url(%23restaurant-pattern)"/></svg>');
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+  background-attachment: fixed, fixed, fixed;
+}
+
+/* Services Banner */
+.banner-services {
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="services-icons" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="12" fill="none" stroke="%23d47d03" stroke-width="2" opacity="0.15"/><path d="M35,35 L65,35 L65,65 L35,65 Z" fill="%23d47d03" opacity="0.08"/><circle cx="50" cy="50" r="4" fill="%23ff9500" opacity="0.2"/><path d="M40,40 L60,40 L60,60 L40,60 Z" fill="none" stroke="%23ff9500" stroke-width="1" opacity="0.15"/></pattern></defs><rect width="1200" height="600" fill="%23f0f8ff"/><rect width="1200" height="600" fill="url(%23services-icons)"/></svg>');
+}
+
+/* Sister Company Banner */
+.banner-sister-company {
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="company-buildings" width="80" height="80" patternUnits="userSpaceOnUse"><rect x="10" y="40" width="15" height="30" fill="%23d47d03" opacity="0.1"/><rect x="30" y="30" width="15" height="40" fill="%23d47d03" opacity="0.12"/><rect x="50" y="35" width="15" height="35" fill="%23ff9500" opacity="0.1"/><rect x="70" y="25" width="15" height="45" fill="%23d47d03" opacity="0.08"/><circle cx="20" cy="20" r="3" fill="%23ff9500" opacity="0.2"/><circle cx="60" cy="15" r="2" fill="%23d47d03" opacity="0.15"/></pattern></defs><rect width="1200" height="600" fill="%23fff8f0"/><rect width="1200" height="600" fill="url(%23company-buildings)"/></svg>');
+}
+
+/* About Banner */
+.banner-about {
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="about-story" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="20" fill="none" stroke="%23d47d03" stroke-width="2" opacity="0.1"/><path d="M30,30 Q50,20 70,30 Q50,40 30,30" fill="%23d47d03" opacity="0.08"/><circle cx="50" cy="50" r="5" fill="%23ff9500" opacity="0.15"/><path d="M40,40 L60,40 L60,60 L40,60 Z" fill="none" stroke="%23ff9500" stroke-width="1" opacity="0.1"/><circle cx="35" cy="35" r="2" fill="%23d47d03" opacity="0.12"/><circle cx="65" cy="65" r="2" fill="%23d47d03" opacity="0.12"/></pattern></defs><rect width="1200" height="600" fill="%23f5faff"/><rect width="1200" height="600" fill="url(%23about-story)"/></svg>');
+}
+
+/* Contact Banner */
+.banner-contact {
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="contact-icons" width="90" height="90" patternUnits="userSpaceOnUse"><circle cx="45" cy="45" r="15" fill="none" stroke="%23d47d03" stroke-width="2" opacity="0.1"/><path d="M30,30 L60,30 L60,60 L30,60 Z" fill="%23d47d03" opacity="0.08"/><circle cx="45" cy="45" r="6" fill="%23ff9500" opacity="0.15"/><path d="M35,35 L55,35 L55,55 L35,55 Z" fill="none" stroke="%23ff9500" stroke-width="1" opacity="0.12"/><circle cx="25" cy="25" r="3" fill="%23d47d03" opacity="0.1"/><circle cx="65" cy="65" r="3" fill="%23d47d03" opacity="0.1"/></pattern></defs><rect width="1200" height="600" fill="%23fafffa"/><rect width="1200" height="600" fill="url(%23contact-icons)"/></svg>');
+}
+
+/* Order Banner */
+.banner-order {
+  background-image: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="order-delivery" width="110" height="110" patternUnits="userSpaceOnUse"><circle cx="55" cy="55" r="18" fill="none" stroke="%23d47d03" stroke-width="2" opacity="0.1"/><path d="M35,35 L75,35 L75,75 L35,75 Z" fill="%23d47d03" opacity="0.08"/><circle cx="55" cy="55" r="8" fill="%23ff9500" opacity="0.15"/><path d="M45,45 L65,45 L65,65 L45,65 Z" fill="none" stroke="%23ff9500" stroke-width="1" opacity="0.12"/><circle cx="25" cy="25" r="4" fill="%23d47d03" opacity="0.1"/><circle cx="85" cy="85" r="4" fill="%23d47d03" opacity="0.1"/><path d="M20,20 L30,20 L30,30 L20,30 Z" fill="%23ff9500" opacity="0.08"/><path d="M80,80 L90,80 L90,90 L80,90 Z" fill="%23ff9500" opacity="0.08"/></pattern></defs><rect width="1200" height="600" fill="%23fffaf5"/><rect width="1200" height="600" fill="url(%23order-delivery)"/></svg>');
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.2) 50%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.banner-content {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 50px 35px;
+  z-index: 2;
+  position: relative;
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(248, 249, 250, 0.95) 100%
+  );
+  border-radius: 20px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 125, 3, 0.05) 0%,
+    rgba(255, 149, 0, 0.03) 100%
+  );
+  pointer-events: none;
+}
+
+.banner-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #d47d03 0%, #ff9500 50%, #d47d03 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 25px;
+  text-shadow: 0 4px 20px rgba(212, 125, 3, 0.3);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  position: relative;
+  z-index: 3;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.banner-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(90deg, #d47d03, #ff9500, #d47d03);
+  border-radius: 3px;
+  box-shadow: 0 2px 10px rgba(212, 125, 3, 0.4);
+}
+
+.banner-subtitle {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-weight: 400;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 3;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+.banner-cta {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: 2px solid transparent;
+  min-width: 180px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.cta-button.primary {
+  background: linear-gradient(135deg, #d47d03 0%, #ff9500 50%, #d47d03 100%);
+  color: white;
+  box-shadow: 0 12px 30px rgba(212, 125, 3, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.cta-button.primary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    transparent 50%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button.primary:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(212, 125, 3, 0.5), 0 10px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #b86502 0%, #e6850e 50%, #b86502 100%);
+}
+
+.cta-button.primary:hover::after {
+  opacity: 1;
+}
+
+.cta-button.secondary {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(248, 249, 250, 0.9) 100%
+  );
+  color: #2c3e50;
+  border: 2px solid rgba(212, 125, 3, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15), 0 4px 12px rgba(212, 125, 3, 0.1);
+  position: relative;
+}
+
+.cta-button.secondary::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 125, 3, 0.1) 0%,
+    transparent 50%,
+    rgba(255, 149, 0, 0.05) 100%
+  );
+  border-radius: 15px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button.secondary:hover {
+  background: linear-gradient(135deg, #d47d03 0%, #ff9500 100%);
+  color: white;
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(212, 125, 3, 0.4), 0 10px 20px rgba(0, 0, 0, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.cta-button.secondary:hover::after {
+  opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner {
+    height: 60vh;
+    min-height: 450px;
+    background-attachment: scroll;
+  }
+
+  .banner-overlay {
+    padding: 15px;
+  }
+
+  .banner-content {
+    padding: 35px 25px;
+    border-radius: 15px;
+    max-width: 100%;
+  }
+
+  .banner-title {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+  }
+
+  .banner-title::after {
+    width: 70px;
+    height: 3px;
+  }
+
+  .banner-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .banner-cta {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cta-button {
+    width: 220px;
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner {
+    height: 55vh;
+    min-height: 380px;
+  }
+
+  .banner-overlay {
+    padding: 10px;
+  }
+
+  .banner-content {
+    padding: 30px 20px;
+    border-radius: 15px;
+    max-width: 100%;
+  }
+
+  .banner-title {
+    font-size: 2.4rem;
+    margin-bottom: 18px;
+  }
+
+  .banner-title::after {
+    width: 60px;
+    height: 3px;
+  }
+
+  .banner-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .cta-button {
+    width: 200px;
+    padding: 12px 24px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .banner {
+    height: 50vh;
+    min-height: 350px;
+  }
+
+  .banner-overlay {
+    padding: 8px;
+  }
+
+  .banner-content {
+    padding: 25px 15px;
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  .banner-title {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+  }
+
+  .banner-title::after {
+    width: 50px;
+    height: 2px;
+  }
+
+  .banner-subtitle {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    width: 180px;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}

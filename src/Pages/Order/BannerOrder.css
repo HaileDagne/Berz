@@ -1,0 +1,64 @@
+/* Order Banner Specific Styles */
+.banner-order {
+  background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.3) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    ),
+    linear-gradient(
+      45deg,
+      #be185d 0%,
+      #ec4899 25%,
+      #be185d 50%,
+      #ec4899 75%,
+      #be185d 100%
+    ),
+    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><defs><pattern id="order-pattern" width="110" height="110" patternUnits="userSpaceOnUse"><circle cx="55" cy="55" r="18" fill="none" stroke="%23d47d03" stroke-width="2" opacity="0.1"/><path d="M35,35 L75,35 L75,75 L35,75 Z" fill="%23d47d03" opacity="0.08"/><circle cx="55" cy="55" r="8" fill="%23ff9500" opacity="0.15"/><path d="M45,45 L65,45 L65,65 L45,65 Z" fill="none" stroke="%23ff9500" stroke-width="1" opacity="0.12"/><circle cx="25" cy="25" r="4" fill="%23d47d03" opacity="0.1"/><circle cx="85" cy="85" r="4" fill="%23d47d03" opacity="0.1"/><path d="M20,20 L30,20 L30,30 L20,30 Z" fill="%23ff9500" opacity="0.08"/><path d="M80,80 L90,80 L90,90 L80,90 Z" fill="%23ff9500" opacity="0.08"/></pattern></defs><rect width="1200" height="600" fill="%23be185d"/><rect width="1200" height="600" fill="url(%23order-pattern)"/></svg>');
+  background-size: cover, cover, cover;
+  background-position: center, center, center;
+  background-attachment: fixed, fixed, fixed;
+}
+
+.banner-order .banner-content {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.98) 0%,
+    rgba(253, 242, 248, 0.95) 100%
+  );
+  border: 2px solid rgba(236, 72, 153, 0.3);
+  box-shadow: 0 30px 80px rgba(190, 24, 93, 0.3), 0 15px 40px rgba(0, 0, 0, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.banner-order .banner-title {
+  background: linear-gradient(135deg, #be185d 0%, #ec4899 50%, #be185d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 20px rgba(190, 24, 93, 0.3);
+}
+
+.banner-order .banner-title::after {
+  background: linear-gradient(90deg, #be185d, #ec4899, #be185d);
+  box-shadow: 0 2px 10px rgba(190, 24, 93, 0.4);
+}
+
+.banner-order .cta-button.primary {
+  background: linear-gradient(135deg, #be185d 0%, #ec4899 50%, #be185d 100%);
+  box-shadow: 0 12px 30px rgba(190, 24, 93, 0.4), 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner-order .cta-button.primary:hover {
+  background: linear-gradient(135deg, #a21caf 0%, #db2777 50%, #a21caf 100%);
+  box-shadow: 0 20px 40px rgba(190, 24, 93, 0.5), 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner-order .cta-button.secondary {
+  border: 2px solid rgba(190, 24, 93, 0.3);
+  color: #be185d;
+}
+
+.banner-order .cta-button.secondary:hover {
+  background: linear-gradient(135deg, #be185d 0%, #ec4899 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
