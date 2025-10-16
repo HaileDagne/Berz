@@ -12,7 +12,7 @@ import Contact from "./Pages/Contact/Contact.jsx";
 
 export default function App() {
   return (
-    <Router basename="/Brez">
+    <Router basename="/">
       <div className="app">
         <Header />
         <main className="main-content">
