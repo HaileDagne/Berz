@@ -17,7 +17,8 @@ export default function App() {
         <Header />
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="" element={<Home />} />
+            <Route path="/Home" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/sister-company" element={<SisterCompany />} />
             <Route path="/order" element={<Order />} />
