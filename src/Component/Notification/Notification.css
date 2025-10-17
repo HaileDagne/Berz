@@ -1,0 +1,224 @@
+/* Premium Notification System */
+.premium-notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  min-width: 350px;
+  max-width: 500px;
+  background: linear-gradient(145deg, 
+    rgba(255, 255, 255, 0.95) 0%, 
+    rgba(248, 249, 250, 0.9) 100%);
+  border-radius: 15px;
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.15),
+    0 8px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 10000;
+  overflow: hidden;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation: slideInRight 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.premium-notification.exiting {
+  animation: slideOutRight 0.3s ease-in-out forwards;
+}
+
+@keyframes slideOutRight {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+  position: relative;
+}
+
+.notification-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  animation: iconBounce 0.6s ease-in-out;
+}
+
+@keyframes iconBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+.notification-message {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.5;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.notification-close {
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.notification-close:hover {
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--text-primary);
+  transform: scale(1.1);
+}
+
+.notification-progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.notification-progress .progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, 
+    var(--primary-color) 0%, 
+    var(--primary-light) 50%, 
+    #ff6b35 100%);
+  border-radius: 0 2px 2px 0;
+  animation: progressShrink 3s linear forwards;
+  box-shadow: 0 0 10px rgba(212, 125, 3, 0.5);
+}
+
+@keyframes progressShrink {
+  0% { width: 100%; }
+  100% { width: 0%; }
+}
+
+/* Notification Types */
+.premium-notification.success {
+  border-left: 4px solid #2ed573;
+  box-shadow: 
+    0 20px 40px rgba(46, 213, 115, 0.2),
+    0 8px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.premium-notification.success .notification-progress .progress-bar {
+  background: linear-gradient(90deg, #2ed573 0%, #1dd1a1 100%);
+  box-shadow: 0 0 10px rgba(46, 213, 115, 0.5);
+}
+
+.premium-notification.error {
+  border-left: 4px solid #ff4757;
+  box-shadow: 
+    0 20px 40px rgba(255, 71, 87, 0.2),
+    0 8px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.premium-notification.error .notification-progress .progress-bar {
+  background: linear-gradient(90deg, #ff4757 0%, #ff6b7a 100%);
+  box-shadow: 0 0 10px rgba(255, 71, 87, 0.5);
+}
+
+.premium-notification.warning {
+  border-left: 4px solid #ffa502;
+  box-shadow: 
+    0 20px 40px rgba(255, 165, 2, 0.2),
+    0 8px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.premium-notification.warning .notification-progress .progress-bar {
+  background: linear-gradient(90deg, #ffa502 0%, #ffb142 100%);
+  box-shadow: 0 0 10px rgba(255, 165, 2, 0.5);
+}
+
+.premium-notification.info {
+  border-left: 4px solid #3742fa;
+  box-shadow: 
+    0 20px 40px rgba(55, 66, 250, 0.2),
+    0 8px 25px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.premium-notification.info .notification-progress .progress-bar {
+  background: linear-gradient(90deg, #3742fa 0%, #5352ed 100%);
+  box-shadow: 0 0 10px rgba(55, 66, 250, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .premium-notification {
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+    max-width: none;
+  }
+  
+  .notification-content {
+    padding: 15px;
+    gap: 12px;
+  }
+  
+  .notification-message {
+    font-size: 14px;
+  }
+  
+  .notification-icon {
+    font-size: 1.3rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .premium-notification {
+    background: linear-gradient(145deg, 
+      rgba(30, 30, 30, 0.95) 0%, 
+      rgba(40, 40, 40, 0.9) 100%);
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .notification-message {
+    color: #ffffff;
+  }
+  
+  .notification-close {
+    color: #cccccc;
+  }
+  
+  .notification-close:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+}
