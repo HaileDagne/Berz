@@ -166,11 +166,11 @@ export default function Hero() {
                 
                 <div className="hero-stats">
                   <div className="stat">
-                    <span className="stat-number">15+</span>
+                    <span className="stat-number">5+</span>
                     <span className="stat-label">Years Experience</span>
                   </div>
                   <div className="stat">
-                    <span className="stat-number">50+</span>
+                    <span className="stat-number">20+</span>
                     <span className="stat-label">Authentic Dishes</span>
                   </div>
                   <div className="stat">
