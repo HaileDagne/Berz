@@ -10,12 +10,10 @@ import SisterCompany from "./Pages/SisterCompany/SisterCompany.jsx";
 import Order from "./Pages/Order/Order.jsx";
 import About from "./Pages/About/About.jsx";
 import Contact from "./Pages/Contact/Contact.jsx";
-import PerformanceMonitor from "./Component/PerformanceMonitor/PerformanceMonitor.jsx";
 
 function AppContent() {
   return (
     <div className="app">
-      <PerformanceMonitor />
       <Header />
       <main className="main-content">
         <Routes>

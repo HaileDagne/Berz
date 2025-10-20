@@ -2,14 +2,6 @@ import { StrictMode, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import {
-  addResourceHints,
-  registerServiceWorker,
-} from "./utils/performance.js";
-
-// Add performance optimizations
-addResourceHints();
-registerServiceWorker();
 
 // Remove loading spinner once app loads
 const removeLoadingSpinner = () => {
