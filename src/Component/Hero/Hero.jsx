@@ -72,16 +72,13 @@ export default function Hero() {
           <div
             key={slide.id}
             className={`hero-slide ${index === currentSlide ? "active" : ""}`}
-            style={{ backgroundImage: `url(${slide.image})` }}
           >
             <img
+              className="hero-bg"
               src={slide.image}
-              alt={slide.title}
+              alt=""
               loading="lazy"
-              style={{ display: "none" }}
-              onLoad={(e) => {
-                e.target.style.display = "none";
-              }}
+              aria-hidden="true"
             />
             <div className="hero-content">
               <div className="hero-text">

@@ -73,17 +73,6 @@ export default function Contact() {
       action: "Make Reservation",
       type: "reservation",
     },
-    {
-      icon: "🚗",
-      title: "Parking & Services",
-      details: [
-        "Free parking available on-site",
-        "Valet service for special events",
-        "Wheelchair accessible",
-      ],
-      action: "Learn More",
-      type: "info",
-    },
   ];
 
   return (
@@ -297,28 +286,26 @@ export default function Contact() {
           </div>
 
           <div className="map-container">
-            <div className="map-placeholder">
-              <div className="map-icon">
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.3639 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-              <h3>Kotebe, Addis Ababa</h3>
-              <p>Near Kotebe University</p>
-              <button className="get-directions-btn">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.123456789!2d38.820183!3d9.028060!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOcKwMDEnNDEuMCJOIDM4wrA0OScxMi42IkU!5e0!3m2!1sen!2set!4v1234567890123!5m2!1sen!2set"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Berz Restaurant Location"
+            ></iframe>
+            <div className="map-info">
+              <h3>Berz Restaurant</h3>
+              <p>Kotebe, Addis Ababa, Ethiopia</p>
+              <p>Coordinates: 9.028060, 38.820183</p>
+              <a
+                href="https://www.google.com/maps/dir/?api=1&destination=9.028060,38.820183"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="get-directions-btn"
+              >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
                   <path
                     d="M10 13L15 8L10 3"
@@ -336,7 +323,7 @@ export default function Contact() {
                   />
                 </svg>
                 Get Directions
-              </button>
+              </a>
             </div>
           </div>
         </div>

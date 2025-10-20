@@ -25,7 +25,7 @@ export default function About() {
     },
     {
       id: 3,
-      name: "Manager Menyahel",
+      name: "Manager Menyahel Tesfaye",
       position: "Restaurant Manager",
       experience: "8+ years in hospitality",
       specialty: "Customer Service Excellence",
@@ -83,45 +83,6 @@ export default function About() {
         "Guest Satisfaction",
         "Attention to Detail",
       ],
-    },
-  ];
-
-  const milestones = [
-    {
-      year: "2010",
-      title: "Restaurant Founded",
-      description:
-        "Chef Berhane established Berz Restaurant with a vision to bring authentic Ethiopian flavors to Addis Ababa.",
-    },
-    {
-      year: "2012",
-      title: "First Expansion",
-      description:
-        "Added catering services to serve the growing demand for authentic Ethiopian cuisine at events.",
-    },
-    {
-      year: "2015",
-      title: "Award Recognition",
-      description:
-        "Received 'Best Ethiopian Restaurant' award from the Addis Ababa Tourism Board.",
-    },
-    {
-      year: "2018",
-      title: "Sister Companies",
-      description:
-        "Expanded business portfolio with Berz Mini Market and Eskinder Consulting Services.",
-    },
-    {
-      year: "2020",
-      title: "Digital Innovation",
-      description:
-        "Launched online ordering and delivery services to adapt to changing customer needs.",
-    },
-    {
-      year: "2024",
-      title: "Premium Experience",
-      description:
-        "Introduced cooking classes and premium dining experiences to share Ethiopian culinary culture.",
     },
   ];
 
@@ -226,28 +187,6 @@ export default function About() {
                       {detail}
                     </span>
                   ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Timeline Section */}
-        <div className="timeline-section">
-          <div className="section-header">
-            <h2>Our Journey</h2>
-            <p>Key milestones in our story</p>
-          </div>
-
-          <div className="timeline">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="timeline-item">
-                <div className="timeline-marker">
-                  <span className="timeline-year">{milestone.year}</span>
-                </div>
-                <div className="timeline-content">
-                  <h4>{milestone.title}</h4>
-                  <p>{milestone.description}</p>
                 </div>
               </div>
             ))}

@@ -19,9 +19,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
   display: flex;
@@ -46,6 +43,18 @@
     rgba(0, 0, 0, 0.5) 100%
   );
   z-index: 1;
+}
+
+/* Background image element to ensure consistent rendering across slides */
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
 }
 
 .hero-content {

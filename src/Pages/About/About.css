@@ -196,81 +196,6 @@
   font-weight: 500;
 }
 
-/* Timeline Section */
-.timeline-section {
-  margin-bottom: 80px;
-}
-
-.timeline {
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #d47d03;
-  transform: translateX(-50%);
-}
-
-.timeline-item {
-  display: flex;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-.timeline-item:nth-child(odd) {
-  flex-direction: row;
-}
-
-.timeline-item:nth-child(even) {
-  flex-direction: row-reverse;
-}
-
-.timeline-marker {
-  width: 60px;
-  height: 60px;
-  background: #d47d03;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 2;
-  flex-shrink: 0;
-}
-
-.timeline-year {
-  color: white;
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-
-.timeline-content {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin: 0 20px;
-  flex: 1;
-}
-
-.timeline-content h4 {
-  color: #2c3e50;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.timeline-content p {
-  color: #666;
-  line-height: 1.6;
-}
-
 /* Team Section */
 .team-section {
   margin-bottom: 80px;
@@ -471,24 +396,6 @@
 
   .values-grid {
     grid-template-columns: 1fr;
-  }
-
-  .timeline::before {
-    left: 20px;
-  }
-
-  .timeline-item {
-    flex-direction: row !important;
-    padding-left: 60px;
-  }
-
-  .timeline-marker {
-    position: absolute;
-    left: 0;
-  }
-
-  .timeline-content {
-    margin: 0;
   }
 
   .team-grid {

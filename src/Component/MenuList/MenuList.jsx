@@ -26,7 +26,7 @@ export default function MenuList() {
             <Menu
               img={item.img}
               title={item.title}
-              price={item.price}
+              // price={item.price}
               desc={item.desc}
             />
           </div>
