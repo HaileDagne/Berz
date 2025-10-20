@@ -1,0 +1,24 @@
+.lazy-image-container {
+  position: relative;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.lazy-placeholder {
+  filter: blur(5px);
+  transform: scale(1.1);
+}
+
+.lazy-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+.lazy-image.loading {
+  opacity: 0;
+}

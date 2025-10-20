@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "../../Component/Hero/Hero.jsx";
 import MenuList from "../../Component/MenuList/MenuList.jsx";
 import CafeMenuList from "../../Component/CafeMenuList/CafeMenuList.jsx";
+import "./Home.css";
 
 export default function Home() {
   return (

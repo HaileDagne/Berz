@@ -1,0 +1,530 @@
+/* Simplified About Page Styles */
+.about-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);
+}
+
+/* Hero Section */
+.about-hero {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 100px 20px 80px;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-hero-description {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  line-height: 1.6;
+}
+
+.about-hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d47d03;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* Content Sections */
+.about-content {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Story Section */
+.story-section {
+  margin-bottom: 80px;
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.story-paragraph h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.story-paragraph p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.story-visual {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.visual-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.story-visual h4 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.story-visual p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Values Section */
+.values-section {
+  margin-bottom: 80px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.value-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.value-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.value-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.value-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.value-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.detail-tag {
+  background: #e8f4f8;
+  color: #2c3e50;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Timeline Section */
+.timeline-section {
+  margin-bottom: 80px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #d47d03;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+  flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.timeline-marker {
+  width: 60px;
+  height: 60px;
+  background: #d47d03;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.timeline-year {
+  color: white;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.timeline-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+  flex: 1;
+}
+
+.timeline-content h4 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.timeline-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Team Section */
+.team-section {
+  margin-bottom: 80px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.team-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-image {
+  background: linear-gradient(135deg, #d47d03, #ff9500);
+  padding: 40px;
+  text-align: center;
+}
+
+.member-avatar {
+  font-size: 4rem;
+  color: white;
+}
+
+.team-info {
+  padding: 30px;
+}
+
+.team-info h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.team-position {
+  color: #d47d03;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.team-experience {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.team-specialty {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.team-story {
+  padding: 0 30px 30px;
+}
+
+.team-story p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: white;
+  padding: 60px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.cta-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.cta-text h3 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.cta-text p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cta-btn {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cta-btn.primary {
+  background: linear-gradient(135deg, #d47d03, #ff9500);
+  color: white;
+}
+
+.cta-btn.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 125, 3, 0.4);
+}
+
+.cta-btn.secondary {
+  background: transparent;
+  color: #d47d03;
+  border: 2px solid #d47d03;
+}
+
+.cta-btn.secondary:hover {
+  background: #d47d03;
+  color: white;
+}
+
+.cta-visual {
+  text-align: center;
+}
+
+.cta-image {
+  background: linear-gradient(135deg, #e8f4f8, #d1ecf1);
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.cta-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.cta-image h4 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.cta-image p {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 80px 15px 60px;
+  }
+
+  .about-hero-title {
+    font-size: 2.5rem;
+  }
+
+  .about-hero-stats {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .about-content {
+    padding: 40px 15px;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    flex-direction: row !important;
+    padding-left: 60px;
+  }
+
+  .timeline-marker {
+    position: absolute;
+    left: 0;
+  }
+
+  .timeline-content {
+    margin: 0;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero-title {
+    font-size: 2rem;
+  }
+
+  .about-hero-description {
+    font-size: 1.1rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-text h3 {
+    font-size: 1.5rem;
+  }
+
+  .cta-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}

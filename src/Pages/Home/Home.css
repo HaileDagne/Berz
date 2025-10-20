@@ -1,0 +1,30 @@
+/* Home Page Styles */
+
+/* Home Page Container */
+.home-page {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Main Content Spacing */
+.main-content {
+  padding-top: 0;
+}
+
+/* Home page with hero section doesn't need extra top padding */
+.home-page .main-content {
+  padding-top: 0;
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding-top: 0;
+  }
+}

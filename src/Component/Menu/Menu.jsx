@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import LazyImage from "../LazyImage/LazyImage.jsx";
+import "./Menu.css";
 
 export default function Menu({ img, title, price, desc }) {
   const [showFullDesc, setShowFullDesc] = useState(false);
@@ -23,7 +25,7 @@ export default function Menu({ img, title, price, desc }) {
   return (
     <div className="single-food">
       <div className="img">
-        <img src={img} alt={title} />
+        <LazyImage src={img} alt={title} width="300" height="200" />
       </div>
       <div className="title-price">
         <h3>{title}</h3>
