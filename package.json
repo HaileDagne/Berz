@@ -9,6 +9,7 @@
     "build:prod": "cross-env NODE_ENV=production vite build",
     "build:hostinger": "cross-env NODE_ENV=production vite build && echo 'Build complete! Upload the dist folder contents to your Hostinger public_html directory.'",
     "deploy": "npm run build && gh-pages -d dist",
+    "predeploy": "npm run build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
