@@ -238,10 +238,10 @@ export default function About() {
                 every dish tells a story of our rich culinary heritage.
               </p>
               <div className="cta-buttons">
-                <a href="/contact" className="cta-btn primary">
+                <a href="./contact" className="cta-btn primary">
                   Visit Our Restaurant
                 </a>
-                <a href="/contact" className="cta-btn secondary">
+                <a href="./contact" className="cta-btn secondary">
                   Contact Us
                 </a>
               </div>

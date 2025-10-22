@@ -180,10 +180,10 @@ export default function Services() {
                   </div>
                 </div>
                 <div className="service-actions">
-                  <a href="/contact" className="learn-more-btn">
+                  <a href="./contact" className="learn-more-btn">
                     Learn More
                   </a>
-                  <a href="/contact" className="book-service-btn">
+                  <a href="./contact" className="book-service-btn">
                     Book Now
                   </a>
                 </div>
@@ -249,10 +249,13 @@ export default function Services() {
                   </div>
 
                   <div className="service-actions">
-                    <a href="/contact" className="service-action-btn primary">
+                    <a href="./contact" className="service-action-btn primary">
                       Book Now
                     </a>
-                    <a href="/contact" className="service-action-btn secondary">
+                    <a
+                      href="./contact"
+                      className="service-action-btn secondary"
+                    >
                       Learn More
                     </a>
                   </div>
