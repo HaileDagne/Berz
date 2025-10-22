@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  // Use root path for GitHub Pages deployment
   base: "/Abity/",
   build: {
     // Optimize build for production
@@ -24,6 +25,9 @@ export default defineConfig({
     },
     // Optimize chunk size
     chunkSizeWarningLimit: 1000,
+    // Ensure proper asset handling
+    assetsDir: "assets",
+    sourcemap: false,
   },
   // Optimize dependencies
   optimizeDeps: {
