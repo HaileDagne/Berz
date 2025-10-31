@@ -2,14 +2,14 @@
   "name": "ብርዝ Cafe & Restaurant",
   "short_name": "Berz Restaurant",
   "description": "Experience the authentic flavors of Ethiopia at Berz Restaurant",
-  "start_url": "/Abity/",
+  "start_url": "/Berz/",
   "display": "standalone",
   "background_color": "#2c3e50",
   "theme_color": "#d47d03",
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/Abity/vite.svg",
+      "src": "/Berz/vite.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"

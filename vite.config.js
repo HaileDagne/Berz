@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   // Use root path for GitHub Pages deployment
-  base: "/Abity/",
+  base: "/Berz/",
   build: {
     // Optimize build for production
     minify: "terser",
