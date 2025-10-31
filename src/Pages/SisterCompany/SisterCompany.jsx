@@ -7,7 +7,7 @@ export default function SisterCompany() {
   const companies = [
     {
       id: 1,
-      name: "Berz Mini Market",
+      name: "Toffee Mini Market",
       tagline: "Your Neighborhood Stop for Everything",
       description:
         "Fresh groceries, snacks, drinks, and daily essentials—all close to home. Quick trips, friendly service, great prices. Stop by today. We've got what you need.",
@@ -25,7 +25,7 @@ export default function SisterCompany() {
     },
     {
       id: 2,
-      name: "Eskinder Consulting Services",
+      name: "Ereya Architects and Engineering PLC",
       tagline: "Building Your Dream Home? We make it simple.",
       description:
         "From sketches to blueprints, we turn your ideas into plans that work—for your lifestyle and your budget. Let's design something you'll love coming home to.",
@@ -41,24 +41,24 @@ export default function SisterCompany() {
       ],
       contact: "+251 922 345 678",
     },
-    {
-      id: 3,
-      name: "Berz Guest House",
-      tagline: "Comfortable accommodation for authentic experiences",
-      description:
-        "Comfortable accommodation for travelers seeking an authentic Ethiopian experience with traditional hospitality. Coming soon to serve you better.",
-      location: "Kotebe, Addis Ababa",
-      specialty: "Traditional Ethiopian Hospitality",
-      icon: "🏠",
-      status: "coming-soon",
-      features: [
-        "Authentic Experience",
-        "Traditional Hospitality",
-        "Comfortable Stay",
-        "Coming Soon",
-      ],
-      contact: "Coming Soon",
-    },
+    // {
+    //   id: 3,
+    //   name: "Berz Guest House",
+    //   tagline: "Comfortable accommodation for authentic experiences",
+    //   description:
+    //     "Comfortable accommodation for travelers seeking an authentic Ethiopian experience with traditional hospitality. Coming soon to serve you better.",
+    //   location: "Kotebe, Addis Ababa",
+    //   specialty: "Traditional Ethiopian Hospitality",
+    //   icon: "🏠",
+    //   status: "coming-soon",
+    //   features: [
+    //     "Authentic Experience",
+    //     "Traditional Hospitality",
+    //     "Comfortable Stay",
+    //     "Coming Soon",
+    //   ],
+    //   contact: "Coming Soon",
+    // },
     {
       id: 4,
       name: "GALAXY Marble & Granite",

@@ -22,8 +22,8 @@ export default function Hero() {
       title: "Traditional Ethiopian Cuisine",
       subtitle:
         "Discover the rich heritage of Ethiopian cooking with our carefully crafted dishes. Each meal tells a story of tradition, culture, and authentic flavors.",
-      image:
-        "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=85",
+      // Image is served from /public/images to respect Vite base path in dev and prod
+      image: `${import.meta.env.BASE_URL}images/Hero-2.jpg`,
       cta: [
         { text: "View Menu", href: "#menu", primary: true },
         { text: "Book a Table", href: "/contact", primary: false },
@@ -47,7 +47,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % heroSlides.length);
-    }, 5000);
+    }, 3000);
     return () => clearInterval(timer);
   }, [heroSlides.length]);
 

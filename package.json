@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:local": "vite --base=/",
     "build": "vite build",
     "build:prod": "cross-env NODE_ENV=production vite build",
     "build:hostinger": "cross-env NODE_ENV=production vite build && echo 'Build complete! Upload the dist folder contents to your Hostinger public_html directory.'",
