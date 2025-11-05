@@ -143,6 +143,34 @@
   line-height: 1.5;
 }
 
+.detail-text.detail-open {
+  color: #28a745;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detail-text.detail-open::before {
+  content: "●";
+  color: #28a745;
+  font-size: 0.8rem;
+}
+
+.detail-text.detail-closed {
+  color: #dc3545;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detail-text.detail-closed::before {
+  content: "●";
+  color: #dc3545;
+  font-size: 0.8rem;
+}
+
 .contact-action-btn {
   background: linear-gradient(135deg, #d47d03, #ff9500);
   color: white;

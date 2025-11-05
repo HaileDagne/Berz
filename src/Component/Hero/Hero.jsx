@@ -73,30 +73,57 @@ export default function Hero() {
             key={slide.id}
             className={`hero-slide ${index === currentSlide ? "active" : ""}`}
           >
-            <img
-              className="hero-bg"
-              src={slide.image}
-              alt=""
-              loading="lazy"
-              aria-hidden="true"
-            />
-            <div className="hero-content">
-              <div className="hero-text">
-                <h1 className="hero-title">{slide.title}</h1>
-                <p className="hero-subtitle">{slide.subtitle}</p>
-                <div className="hero-cta">
-                  {slide.cta.map((button, btnIndex) => (
-                    <a
-                      key={btnIndex}
-                      href={button.href}
-                      className={`hero-button ${
-                        button.primary ? "primary" : "secondary"
-                      }`}
-                    >
-                      {button.text}
-                    </a>
-                  ))}
+            {/* Left Side Decorative Element */}
+            <div className="hero-side hero-side-left">
+              <div className="hero-side-content">
+                <div className="hero-side-icon">☕</div>
+                <div className="hero-side-text">
+                  <h3>Traditional Coffee Ceremony</h3>
+                  <p>Experience authentic Ethiopian coffee culture</p>
                 </div>
+                <div className="hero-side-pattern"></div>
+              </div>
+            </div>
+
+            {/* Center Image Section (75% width) */}
+            <div className="hero-image-container">
+              <img
+                className="hero-bg"
+                src={slide.image}
+                alt=""
+                loading="lazy"
+                aria-hidden="true"
+              />
+              <div className="hero-content">
+                <div className="hero-text">
+                  <h1 className="hero-title">{slide.title}</h1>
+                  <p className="hero-subtitle">{slide.subtitle}</p>
+                  <div className="hero-cta">
+                    {slide.cta.map((button, btnIndex) => (
+                      <a
+                        key={btnIndex}
+                        href={button.href}
+                        className={`hero-button ${
+                          button.primary ? "primary" : "secondary"
+                        }`}
+                      >
+                        {button.text}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side Decorative Element */}
+            <div className="hero-side hero-side-right">
+              <div className="hero-side-content">
+                <div className="hero-side-icon">🌶️</div>
+                <div className="hero-side-text">
+                  <h3>Spice of Life</h3>
+                  <p>Rich, aromatic flavors await</p>
+                </div>
+                <div className="hero-side-pattern"></div>
               </div>
             </div>
           </div>

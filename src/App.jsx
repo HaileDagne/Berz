@@ -32,8 +32,11 @@ function AppContent() {
 }
 
 export default function App() {
+  // Use Vite's base URL for proper routing in both dev and production
+  const basename = import.meta.env.BASE_URL.replace(/\/$/, ''); // Remove trailing slash
+  
   return (
-    <Router>
+    <Router basename={basename}>
       <AppContent />
     </Router>
   );

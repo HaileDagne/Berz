@@ -122,11 +122,29 @@ export default function Contact() {
                 </div>
 
                 <div className="contact-method-details">
-                  {method.details.map((detail, idx) => (
-                    <div key={idx} className="detail-item">
-                      <span className="detail-text">{detail}</span>
-                    </div>
-                  ))}
+                  {method.details.map((detail, idx) => {
+                    // Determine if this is an open hour (green) or closed hour (red)
+                    const isOpenHour = detail.includes("11:00 AM - 10:00 PM");
+                    const isClosedHour =
+                      detail.includes("closes") ||
+                      detail.includes("Last orders");
+
+                    return (
+                      <div key={idx} className="detail-item">
+                        <span
+                          className={`detail-text ${
+                            isOpenHour
+                              ? "detail-open"
+                              : isClosedHour
+                              ? "detail-closed"
+                              : ""
+                          }`}
+                        >
+                          {detail}
+                        </span>
+                      </div>
+                    );
+                  })}
                 </div>
 
                 <button className="contact-action-btn">{method.action}</button>

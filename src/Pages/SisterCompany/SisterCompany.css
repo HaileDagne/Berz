@@ -376,8 +376,9 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  width: 100%;
+  flex: 1;
   justify-content: center;
+  min-width: 120px;
 }
 
 .company-contact-btn:hover {
