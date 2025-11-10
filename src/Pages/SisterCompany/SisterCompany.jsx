@@ -40,6 +40,7 @@ export default function SisterCompany() {
         "Free Consultation",
       ],
       contact: "+251 922 345 678",
+      website: "https://ereya.norisk4you.com/",
     },
     // {
     //   id: 3,
@@ -154,12 +155,25 @@ export default function SisterCompany() {
                   </div>
                 </div>
                 {companies[activeCompany].status === "active" && (
-                  <a
-                    href={`tel:${companies[activeCompany].contact}`}
-                    className="contact-company-btn"
-                  >
-                    Contact Now
-                  </a>
+                  <div className="company-action-buttons">
+                    <a
+                      href={`tel:${companies[activeCompany].contact}`}
+                      className="contact-company-btn"
+                    >
+                      Contact Now
+                    </a>
+                    {companies[activeCompany].id === 2 &&
+                    companies[activeCompany].website ? (
+                      <a
+                        href={companies[activeCompany].website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="visit-website-btn"
+                      >
+                        Visit Website
+                      </a>
+                    ) : null}
+                  </div>
                 )}
               </div>
             </div>
@@ -220,13 +234,26 @@ export default function SisterCompany() {
                   </div>
 
                   {company.status === "active" && (
-                    <a
-                      href={`tel:${company.contact}`}
-                      className="company-contact-btn"
-                      onClick={(e) => e.stopPropagation()}
-                    >
-                      Contact
-                    </a>
+                    <div className="company-card-actions">
+                      <a
+                        href={`tel:${company.contact}`}
+                        className="company-contact-btn"
+                        onClick={(e) => e.stopPropagation()}
+                      >
+                        Contact
+                      </a>
+                      {company.id === 2 && company.website ? (
+                        <a
+                          href={company.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="company-website-btn"
+                          onClick={(e) => e.stopPropagation()}
+                        >
+                          Website
+                        </a>
+                      ) : null}
+                    </div>
                   )}
                 </div>
               </div>

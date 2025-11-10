@@ -3,8 +3,8 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  // Use root path for GitHub Pages deployment
-  base: "/Berz/",
+  // Use root path for Hostinger deployment
+  base: "/",
   build: {
     // Optimize build for production
     minify: "terser",
